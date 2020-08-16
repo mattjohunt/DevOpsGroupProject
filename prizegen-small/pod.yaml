@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: prizegen
+  labels: 
+    app: prizegen
+spec:
+  containers:
+    - name: prizegen
+      image: hazardd/prizegen:small
+      imagePullPolicy: "Always"
+      ports:
+      - containerPort: 9017

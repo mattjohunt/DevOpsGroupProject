@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: textgen
+  labels: 
+    app: textgen
+spec:
+  containers:
+    - name: numgen
+      image: hazardd/textgen:upper
+      imagePullPolicy: Always
+      ports:
+      - containerPort: 9018

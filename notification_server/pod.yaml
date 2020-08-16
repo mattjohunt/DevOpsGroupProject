@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: notification
+  labels: 
+    app: notification
+spec:
+  containers:
+    - name: notification
+      image: hazardd/notification_server:v2
+      ports:
+      - containerPort: 9000

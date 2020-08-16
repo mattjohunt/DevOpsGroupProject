@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: db-connector
+  labels: 
+    app: db-connector
+spec:
+  containers:
+    - name: db-connector
+      image: hazardd/db-connector:v1
+      ports:
+      - containerPort: 5001

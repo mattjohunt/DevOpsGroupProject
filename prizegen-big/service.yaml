@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: prizegen
+spec:
+  selector:
+    app: prizegen
+  ports: 
+  - protocol: TCP
+    port: 9017
+    targetPort: 9017
+  type: ClusterIP
